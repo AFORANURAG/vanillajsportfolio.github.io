@@ -3,135 +3,28 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<link rel="stylesheet" href="./styles/style.css">
 <title>My Portfolio</title>
-<style>
-body {margin:0;font-family:Arial}
-:root{
-  --background-color:#614385;
-  --color:white;
-}
-.topnav {
-  
-  overflow: hidden;
-  background-color:var(--background-color);
-/* background-image: linear-gradient(to right,red ,yellow); */
-}
-
-.topnav a {
-  float: left;
-  display: block;
- color: var(--color);
-  text-align: center;
-  padding: 24px 26px;
-  padding-top: 30px;
-  text-decoration: none;
-  font-size: 25px;
-}
-
-.active {
-  float: left;
- 
-  color: var(--color);
-
-}
-
-.topnav .icon {
-  display: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-  text-align: center;
-  padding: 24px 26px;
-padding-top: 15px;
-}
-
-.dropdown .dropbtn {
- 
-  
-  
-  font-size: 25px;    
-  border: none;
-  outline: none;
-  color: var(--color);
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: inherit;
-  color: black;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-}
-</style>
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon_io (1)/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon_io (1)/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon_io (1)/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
 </head>
-<body>
+<body id="body" class="changing">
 
 <div class="topnav" id="myTopnav">
   <a href="#home" class="active">Home</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
-  <div class="dropdown">
+  <!-- <div class="dropdown">
     <button class="dropbtn">Dropdown 
       <i class="fa fa-caret-down"></i>
     </button>
@@ -140,38 +33,149 @@ padding-top: 15px;
       <a href="#">Link 2</a>
       <a href="#">Link 3</a>
     </div>
-  </div> 
+  </div>  -->
   <a href="#about">About</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" >&#9776;</a>
+  <a href="" style="float: right;font-family: Arial, Helvetica, sans-serif;" id="typewritter"> </a>
+<img src="https://cdn-icons-png.flaticon.com/512/2906/2906274.png" style="width: 100px;float: right;" alt="" srcset="">
 </div>
-<button onclick="toggler()" id="button" class="notchanged">turn to white mode</button>
+
+<button  id="button" class="notchanged">turn to black mode</button>
+
+<div id="sineHello">
+  <img id="sineHelloimg" src="https://www.seekpng.com/png/detail/190-1906700_hello-hello-png.png">
+<!-- <p style="display: inline;">hello </p> -->
+</div>
 
 
-<script>
-let changer=document.querySelector(":root")
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-const toggler=()=>{
-let catcher=document.getElementById("button")
-if(catcher.className=="notchanged"){
-  let background_color=getComputedStyle(changer)
-changer.style.setProperty("--color","black")
-changer.style.setProperty("--background-color","#ddd6f3")
-catcher.className="changed"
-}else{
-  changer.style.setProperty("--color","white")
-  changer.style.setProperty("--background-color","#614385")
-  catcher.className="notchanged"
-} 
 
-}
-</script>
+<!-- header of the homepage -->
+<div id="header">
+<div id="gifs">
+
+
+<a class="contacts" href="https://www.linkedin.com/in/anurag-upadhyay-9676b5239">
+  <img style="width: 80%;position: relative;left:-10px;" src="https://cliply.co/wp-content/uploads/2021/02/372102050_LINKEDIN_ICON_400px.gif" alt="">
+</a>
+
+<a class="contacts" id="phone"  href="7836068460">
+  <span class="tooltip"></span>
+  <img style="width: 550%;" src="https://www.animatedimages.org/data/media/325/animated-telephone-image-0002.gif" border="0" alt="animated-telephone-image-0002" /></a>
+
+
+<a class="contacts" href="https://github.com/">
+  <img  style="width: 40%;" src="https://media2.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif?cid=ecf05e47c52kkhswj2chnqaj8q6k4x2za0qyupbqqo8q6v12&rid=giphy.gif&ct=g" alt="">
+</a>
+
+</div>
+<div id="me">
+  <a><img  id="myphoto" src="https://i.ibb.co/By7f9C0/Anuragupadhyay-image.jpg" alt="Anuragupadhyay-image" border="0"></a>
+
+<img id="reactlogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="">
+<img id="nodejslogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" alt="">
+<img id="expresslogo" src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_21a537a2f60ea582bd213cab0722cb1a/express-js.png" alt="">
+<img id="mongodblogo" src="https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Logo.jpg" alt="">
+<img id="mysqllogo" src="https://1000logos.net/wp-content/uploads/2020/08/MySQL-Logo.png" alt="">
+<img id="linuxlogo" src="https://1000logos.net/wp-content/uploads/2017/03/LINUX-LOGO.png" alt="">
+<img id="redislogo" src="https://upload.wikimedia.org/wikipedia/en/6/6b/Redis_Logo.svg" alt="" srcset="">
+<img id="htmllogo" src="data:image/png;base64,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" alt="">
+<img id="jslogo" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="">
+<img id ="csslogo" src="https://img.freepik.com/free-icon/css_318-698167.jpg?w=2000" alt="">
+
+<img id="bootstraplogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" alt="">
+<img id="reduxlogo" src="https://cdn.iconscout.com/icon/free/png-256/redux-3627245-3029653.png" alt="">
+<img id="chakralogo" src="https://images.opencollective.com/chakra-ui-pro/61bd1dd/logo/256.png" alt="">
+</div>
+
+<div id="mybiodata">
+<h1 id="heading1">Anurag Upadhyay -A Full Stack Developer who is profient in developing full stack application with React And Node</h1>
+
+<div id="subsection">
+<h2 id="mydescription">
+An IT professional who has experience in working in collaborative projects.An Enthusiastic learner who
+always try to solve real world and industry level problems with his skills. A versatile developer who always 
+ready to change and adapt and seeks to work with new technolgies.Always shares company's goal and vision
+and always try to contribute his code for solving some real world problems.And always wanted to contribute his 
+code for good.Align more toward problem solving rather than just coding.
+
+</h2>  
+
+</div>
+
+</div>
+
+</div> 
+
+
+
+
+
+
+
+<div id="myfullintroduction">
+<h1 class="introduction">My Introduction</h1>
+
+<h3 id="mydes">
+Hello ,I hope you are doing well , I am Anurag Upadhyay and I am from New Delhi. I am Born and raised in delhi.After completing my 12th grade with good scores , I started exploring many fields such as marketing , branding and probably coding , so i try all of them
+but lastly i choosed coding because i have a good interest in maths and logic. I took admission in masai's full stack developement course to learn  MERN Stack in just 7 months with a good amount of collaborative and individual projects.
+Some great things about masai's Full stack development course is that it included more than 1200hrs+ and even much more hrs  if i include debugging and exploring by myself.For it is like a magic to learn all of this in just 6-7 monts.
+There I made more than 20 small to medium size projects and 4 collaborative project in which one is only front end and others 3 are full stack application ,i.e they included backend and front end both.
+There
+I learn that the best way to learn coding is by doing it and making projects,reading documentation and blogs.
+In our collaborative projects I  explore a lot to implement various functionality such as how to use passport or OATH etc and i learn many things from exploring.
+. Too be very honest I always wanted to work at startup because i personally believe that my personality will 
+be grown with a rapid pace when i work at a place where i can interact with CEO,CTO and my seniors and learn from 
+there experience and advises . 
+I always try to put my last single calorie  to get the job done with a great quality.
+</h3>
+
+</div>
+
+<div id="calender">
+
+
+
+
+</div>
 
 </body>
 </html>
+
+<script src="./src/index.js" type="module"></script>
+
+
+
+</script>
+
+<script>
+
+  console.log("Welcome!I hope you are doing good ")
+  let app=document.getElementById("typewritter")
+  let typewritter=new Typewriter(app,{
+    loop:true,
+    delay:200,
+    autoStart:true,
+    deleteSpeed:200
+  })
+
+  typewritter.pauseFor(1500)
+  typewritter.typeString("Welcome!")
+  typewritter.pauseFor(1000)
+  typewritter.start()
+
+
+
+  let heading1=document.getElementById("heading1")
+  let heading1typewriter=new Typewriter(heading1,{
+    loop:true,
+    delay:50,
+    autoStart:true,
+    deleteSpeed:300
+  })
+
+  heading1typewriter.pauseFor(5)
+  heading1typewriter.typeString("Anurag Upadhyay -A Full Stack Developer who is profient in developing full stack application with React And Node")
+  heading1typewriter.pauseFor(5000)
+  heading1typewriter.start()
+  GitHubCalendar(".calendar", "your-username", { responsive: true });
+</script>

@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "github-calendar": "^2.3.1",
+    "typewriter-effect": "^2.19.0"
+  },
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AFORANURAG/My_Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AFORANURAG/My_Portfolio/issues"
+  },
+  "homepage": "https://github.com/AFORANURAG/My_Portfolio#readme",
+  "description": ""
+}
