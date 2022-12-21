@@ -123,23 +123,28 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
     }
     #header{
       display: grid;  
-       width: 100%; 
-position: absolute;
-grid-template-columns: 5% 25% 70%;
-grid-template-rows: 500px;
+       width: 80%; 
+/* position: absolute; */
+grid-template-columns: 30% 70%;
+grid-template-rows: 300px;
 border: 1px solid black;
-overflow-x: hidden;
+/* overflow-x: hidden; */
 margin-top: 50px;
 /* padding-left: 5%; */
 /* margin-left: 10%; */
 /* margin: 100px 10% 0px 5%; */
-margin-right: 20%;
+padding-right: 10%;
+padding-left: 5%;
+margin-right: 25%;
+margin-left: 10%;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #gifs{
 border: 1px solid black;
- 
-    padding-left: 3%;
+position: relative;
+float: left; 
+left: -120px;
+/* padding-left: 3%; */
 padding-top: 350px;
 }
 #me{
@@ -147,12 +152,9 @@ padding-top: 350px;
     text-align: center;
      
 }
-.tooltip{
-    display:block;
-}
 
 #phone{
-width: 10%;
+width: 20%;
 }
 #phone:hover {
 display: block;
@@ -202,12 +204,18 @@ display: block;
 }
 
 }
-
+#tstack{
+  margin-left: 40%;
+  margin-top: 100px;
+  color: var(--color1);
+}
 #subsection{
   width: inherit;
   border: 1px solid black;
-  height: 300px;
+  height: auto;
   position: static;
+  width: 80%;
+  margin-left: 10%;
  /* color: var(--color1); */
   margin-top: 100px;
   text-align: center;
@@ -219,6 +227,7 @@ display: block;
   animation-delay: var(--nav-load-time);
   animation-fill-mode: forwards;
 }
+
 @keyframes subsection-loader{
   0%{
       transform: scale(0);
@@ -251,118 +260,203 @@ display: block;
   color: var(--color1);
 }
 #sineHelloimg {
-  position:absolute;
+  position:relative;
   animation: upDown 1.5s alternate  ease-in-out;
   animation-iteration-count: 7;
   width:60%;
+  overflow-x: hidden;
 }
 
 @keyframes upDown {
   to { transform: translatey(70px);}
 }
 @keyframes translate {
-  to { transform: translatex(900%);}
+  to { transform: translatex(1000%);}
 }
 
 
 
 #reactlogo{
-width: 20%;
-position: relative;
-top: 300px;
-left: 25%;
-}
+width: 25%;
+/* margin:20px 30px 90px 20px; */
+/* position: relative; */
+margin-bottom: 50px;
 
+}
+.techstacklogodiv{
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
 #nodejslogo{
-  position: relative;
-  width: 20%;
-left: -20%;
+  /* position: relative; */
+  width: 25%;
+  
+
 }
 
 #expresslogo{
-  width: 20%;
-  left: -15%;
-position: relative;
+  width: 25%;
+  
+  
+/* position: relative; */
 }
 
 #mongodblogo{
-  width: 20%;
-position: relative;
-left: -7%;
+  width: 25%;
+  
+/* position: relative; */
+
 }
 #mysqllogo{
-  width: 20%;
-margin-left: 5%;
+  width: 25%;
+  margin-top: 30px;
+
 }
 #redislogo{
-  width: 20%;
-margin-left: 5%;
+  width: 25%;
+  margin-bottom: -40px;
+
 }
 #linuxlogo{
 
-width: 20%;
-margin-left: 5%;
+width: 25%;
+
+margin-top: 30px;
 }
 #chakralogo{
-width: 20%;
-margin-top: 20px;
-margin-left: 30px;
+width: 25%;
+margin-top: 40px
+;
 }
 #htmllogo{
- margin-left: 5%;
-  width: 20%;
-
+ width:  25%;
+ margin-bottom: -70px;
 }
+
 #bootstraplogo{
- margin-left: 5%;
-  width: 20%;
+ width:  25%;
+  
 
 }
 #csslogo{
- margin-left: 5%;
-  width: 20%;
+ width:  25%;
+  
 
 }#jslogo{
-  width: 20%;
+  width: 25%;
+  
 
 }
 #reduxlogo{
-  width: 20%;
+  width: 25%;
+  
 }
 
 
 #myfullintroduction{
-  height: 600px;
-  border: 1px solid black;
-  margin-top: 250px;
-  width: 300%;
+  height: auto;
+  border: 1px solid rgb(223, 193, 193);
+  margin-top: 100px;
+  width: 80%;
   position: relative;
- margin-left: 25%;
  text-align: center;
+ right: 10%;
+ left: 9%;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .introduction{
+  position: relative;
   color: var(--color1);
+  top: 50px;
+  left: 40%;
 }
 #mydes{
   color: var(--color1);
   line-height: 30px;
 }#calender{
   height: 300px;
-  width: 100%;
+  width: 90%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   border: 1px solid black;
-  position: relative;
-  top: 500px;
+position: relative;
+top: 60px;
+left: 5%;
+right: 10%;
+}
+#activity{
+  margin-top:60px ;
+  margin-left: 40%;
+color: var(--color1);
 }
 
+#project{
+margin: auto;
+margin-left: 25%;
+  margin-top: 100px;
+color: var(--color1);
+}
+#myprojects{
+margin-top: 50px;
+border: 1px solid black;
+width: 80%;
+/* height: 500px; */
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(4,400px);
+/* gap: 50px; */
+row-gap: 30px;
+margin-left: 10%;
+color: var(--color1);
+}
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 900px) {
       .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+      }
+      #header{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+      }
+
+      #reactlogo{
+        margin-bottom: 50px;
+      }
+      #nodejslogo{
+        margin-top: 50px;
+      }
+      #mongodblogo{
+        margin-bottom: -20px;
+      }
+      #jslogo{
+        margin-top: 30px;
+      }#redislogo{
+        margin-bottom: 20px;
+      }#htmllogo{
+        margin-bottom: 10px;
+      }#csslogo{
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      #gif{
         display: none;
       }
       .topnav a.icon {
         float: right;
         display: block;
       }
+    }
+    #tech-stack{
+  padding: 50px 50px 50px 50px;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: 50px;
+      margin-top: 100px;
+      height: auto;
+      text-align: center;
+      width: 80%;
+      margin-left: 10%;
+      border: 1px solid black;
     }
     
     @media screen and (max-width: 600px) {
@@ -372,6 +466,10 @@ margin-left: 30px;
         right: 0;
         top: 0;
       }
+#tech-stack{
+  grid-template-columns: repeat(1,1fr);
+  text-align: center;
+}
       .topnav.responsive a {
         float: none;
         display: block;
